@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style> 
+    .error {color:red;}
+  </style>
+</head>
+  <body>
+	<h1>Signup</h1>
+  
+  <form method = "POST">
+    <table>
+	<tr><td><label for = "username">Username:</td>
+		<td><input id = "username" type ="text" name = "username" value ="{{username}}" size = "25"/></td>
+		</label><td>
+	<p class ="error" size = "25">{{username_error}}</td>
+	</tr>
+	
+	
+	<tr><td><label for = "password">Password:</td>
+		<td><input id = "password" type ="password" name = "password" size ="25"/></td>
+		</label><td>
+    <p class ="error" size ="25">{{password_error}}</td>
+	</tr>
+	
+	
+    <tr><td><label for = "verify password">Verify password:</td>
+		<td><input id = "verify_password" type="password" name = "verify_password" size ="25"/></td>
+		</label><td>
+	<p class ="error" size ="25">{{verify_password_error}}</td>
+	</tr>
+		
+	<tr><td><label for = "email">Email (optional):</td>
+		<td><input id = "email" type ="text" name="email"value = "{{email}}" size ="25"/></td>
+		</label><td>
+    <p class ="error" size = "25" >{{email_error}}</td>
+	
+	</tr>
+	
+</table>
+	
+	<br><input type= "submit" value="Submit"/>
+        
+    </form>
+    </body>
+    </html>
+	
